@@ -1,0 +1,47 @@
+// Object
+const car = {
+    make: "Tesla",
+    model: "Model 3",
+    year: 2020,
+    isElectric: true,
+    range: 300,
+    drive: function() {
+        console.log("The car is driving");
+    },
+    charge: function() {
+        console.log("The car is charging");
+    }
+};
+
+console.log(car);
+car.drive();
+car.charge();
+
+// Class
+class Car {
+    constructor(make, model, year, isElectric, range) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.isElectric = isElectric;
+        this.range = range;
+    }
+
+    drive() {
+        console.log("The car is driving");
+    }
+
+    charge() {
+        console.log("The car is charging");
+    }
+}
+
+const myCar = new Car("Tesla", "Model 3", 2020, true, 300);
+console.log(myCar);
+myCar.drive();
+myCar.charge();
+The first code block creates an object called "car" that has properties like "make", "model", "year" and "isElectric" and methods like "drive" and "charge". The object is created using object literals notation {} and its properties and methods are defined directly.
+
+The second code block creates a class called "Car" that has a constructor function which accepts the same parameters as the properties of the object, and also it has the same methods that were in the object version of the car, drive, and charge. Each time you create a new instance of the class, like myCar, by calling the constructor function, you will create a new object that has the same properties and methods but with different values.
+
+To summarize, An object is a single thing, like a specific car you own, it's created by directly defining the properties and methods of the object. A class is like the blueprint or design for a car,
